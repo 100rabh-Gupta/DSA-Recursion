@@ -4,7 +4,7 @@ public:
         int up=0;
            int l=0;
              
-    for (char c:moves){
+    for (char &c:moves){
         if(c=='U'){
             up++;
         }
