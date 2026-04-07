@@ -19,7 +19,7 @@ public:
         }
 
     }
-    return up==0&&l==0;
+    return !up&&!l;
         
     }
 };
