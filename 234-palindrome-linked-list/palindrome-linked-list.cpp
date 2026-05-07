@@ -48,10 +48,7 @@ public:
         head2=head2->next;
 
     }
-return 1;
-
-    
-    
+return 1;  
         
     }
 };
