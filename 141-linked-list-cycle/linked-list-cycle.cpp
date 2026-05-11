@@ -13,8 +13,8 @@ public:
             return false;
         }
 ListNode *tail=head;
-int n=10000;
-        while (n--){
+
+        for (int i=0;i<=10000;i++){
             if (tail->next==nullptr)
             return false;
             tail=tail->next;
