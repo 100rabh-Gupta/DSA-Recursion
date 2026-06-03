@@ -27,27 +27,20 @@ temp=head1;
 
 
 
-vector<int >store;
-int maxi=INT_MIN;
-        while(temp){
-            maxi=max(maxi,temp->val);
-            store.push_back(maxi);
-        
-temp=temp->next;
+
 
             
-        }
-        for ( int i=0;i<store.size();i++){
-            cout<<store[i];
-        }
-        temp=head1;
+       
+    int maxi=INT_MIN;
         ListNode* newhead=new ListNode(0) ;
          ListNode* tail=newhead;
-         int i=0;
+         int ;
 
-         while( temp&& i<store.size()){
+         while( temp){
              ListNode* nxt = temp->next;
-            if ( store[i]==temp->val){
+
+            if ( temp->val>=maxi){
+                 maxi = temp->val;
                 tail->next=temp;
                 tail=tail->next;
                 tail->next=nullptr;
@@ -55,7 +48,7 @@ temp=temp->next;
 
             }
             temp=nxt;
-            i++;
+        
 
          }
 
